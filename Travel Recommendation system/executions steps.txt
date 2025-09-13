@@ -1,0 +1,7 @@
+1. open tours[1]_1 file in vs code
+2.change the file directory path to tours in terminal
+3.download the requirements.txt file in tours file directory to download all the libraries
+4. activate the virtual environment file by the command set virtualenv env in terminal
+5. select app.py file to run the website
+6.to execute the app.py file run the command python 3 app.py in terminal
+7.you will get http link in the output click on the link to view the website in browser

@@ -1,0 +1,132 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "travel",
+         "patterns": ["Where should I go?", "What kinds of deals are there?", "What do you rent?" ],
+         "responses": ["We offer hotels, restuarants according to your requirement", "We have different kinds of hotel options according to your needs"]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        },
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "rental",
+         "patterns": ["Can we rent a vehicle?", "I'd like to rent a car", "How does this work?" ],
+         "responses": ["This is subject to availability and hotel "]
+        },
+        {"tag": "Hyderabad",
+        "patterns":["Where can I visit in hyderabad?","What are some places I can't miss in Hyderabad?", "Where do you recommend going in Hyderabad? "],
+        "responses":["Charminar, Golconda, durgam cheruvu, Ramoji film city, Tank bund etc","You can visit Charminar, Golconda, durgam cheruvu, Nehru zoological park, Wonderla"]
+        },
+        {"tag": "Mumbai",
+        "patterns":["Where can I visit in Mumbai?","What are some places I can't miss in Mumbai?", "Where do you recommend going in Mumbai?"],
+        "responses":["Marine Drive, Filmistan, Gateway of India, Juhu beach etc"]
+        },
+        {"tag":"general",
+        "patterns":["How do I navigate this?","How can I book a hotel?", "Can you recommend a restuarant?"],
+        "responses":["You can use different features on this interface to compare prices and ratings of different places.", "You can compare prices and ammenities and get the best deal"]
+        },
+        {"tag":"Kolkata",
+        "patterns":["Where can I go in Kolkata?","Can you recommend places to visit in Kolkata?"],
+        "responses":["Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple,Dakshineswar Kali Temple,  Park Street etc"]
+        },
+        {"tag":"Bangaloore",
+        "patterns":["Where can I go in Bangaloore?","Can you recommend places to visit in Bangaloore"],
+        "responses":["Cubbon Park, Lalbagh Botanical Garden, Bangalore Palace,Krishna Rajendra (KR) Market,Lalbagh Botanical Garden etc"]
+        },
+        {"tag":"Bangalore",
+        "patterns":["Can you plan a trip for 5 days to Bangloore?"],
+        "responses":["Day 1: Visit ISKCON Temple, Day 2:Visit Lalbagh Botanical Garden, Day 3:Explore Tipu Sultan's Summer Palace,Day 4: Visit Bangalore Palace, Day 5 : Explore the National Gallery of Modern Art"]
+        },
+        {"tag":"Chennai",
+        "patterns":["Where can I go in Chennai?","Can you recommend places to visit in Chennai?"],
+        "responses":["Marina Beach, Kapaleeshwarar Temple, San Thome Basilica, Elliot’s Beach,Thousand Lights Mosque"]
+        },
+        {"tag":"Jaipur",
+        "patterns":["Where can I go to Jaipur?","Can you recommend places to visit in Jaipur?"],
+        "responses":["Haw Mahal, Amber Fort, City Palace,Jaigarh Fort, City Palace etc"]
+        },
+        {"tag":"Goa",
+        "patterns":["Where can I go in Goa?","Can you recommend places to visit in Goa?"],
+        "responses":["Calangute Beach, Fort Aguada, Basilica of Bom Jesus,,Calangute Beach,Dudhsagar Falls and Spice Plantation etc"]
+        },
+        {"tag":"Ooty",
+        "patterns":["Where can I go in Ooty?","Can you recommend places to visit in Ooty?"],
+        "responses":["Ooty Rose Garden,Emerald Lake,Ooty Lake,Nilgiri Mountain Railway,Ooty Botanical Gardens etc"]
+        },
+        {"tag":"Agra",
+        "patterns":["Where can I go in Agra?","Can you recommend places to visit in Agra?"],
+        "responses":["Taj Mahal, Agra Fort, Fatehpur Sikri, Subhash Emporium,Mehtab Bagh"]
+        },
+        {"tag":"Mahabaleshvar",
+        "patterns":["Where can I go in Mahabaleshvar?","Can you recommend places to visit in Mahabaleshvar?"],
+        "responses":["Elephant’s Head Point,Lingamala Falls,Pratapgad,Mapro Garden,Venna Lake"]
+        },
+        {"tag":"Mysore",
+        "patterns":["Where can I go in Mysore?","Can you recommend places to visit in Mysore?"],
+        "responses":["Mysore Palace, Brindavan Gardens, Chamundi Hills,Somanathapura Art Museum,Jaganmohan Palace Museum"]
+        },
+        {"tag":"Manali",
+        "patterns":["Where can I go in Manali?","Can you recommend places to visit in Manali?"],
+        "responses":["Solang Valley, Manu Temple, Hidimba Temple, Rohtang Pass, Vashisht Hot Water Springs"]
+        },
+        {"tag":"Coorg",
+        "patterns":["Where can I go in Coorg?","Can you recommend places to visit in Coorg?"],
+        "responses":["Abbey Falls, BrahminsRidge, KushalNagar Fort, RajaRajeshwariTemple, TalcauveryFalls"]
+        },
+        {"tag":"Munnar",
+        "patterns":["Where can I go in Munnar?","Can you recommend places to visit in Munnar?"],
+        "responses":["Eravikulam National Park, Kundala Lake, Charm Point, Tata Tea Museum, Nallathanni Waterfalls"]
+        },
+        {"tag":"Darjeeling",
+        "patterns":["Where can I go in Darjeeling?","Can you recommend places to visit in Darjeeling?"],
+        "responses":["Tiger Hill, Gorubathan Temple, Mymensingh Palace, Baroding Monastery, Tea Garden"]
+        },
+        {"tag":"Shimla",
+        "patterns":["Where can I go in Shimla?","Can you recommend places to visit in Shimla?"],
+        "responses":["Jakhu Temple, Mall Road, Summer Hill, Christ Church, Prospect Point"]
+        },
+        {"tag":"Coonoor",
+        "patterns":["Where can I go in Coonoor?","Can you recommend places to visit in Coonoor?"],
+        "responses":["Coonoor - Queen of the Nilgiris, Lamb's Rock, Dolphin's Nose , Coonoor Golf Course, Bandipur National Park"]
+        },
+        {"tag":"Nainital",
+        "patterns":["Where can I go in Nainital?","Can you recommend places to visit in Nainital?"],
+        "responses":["Naini Lake, Tal Bukha Dukha Sanctuary, Mujheel Temple, Dolphin's Nose Viewpoint, Mini Sarkara World Zoo"]
+        },
+        {"tag":"Alleppey",
+        "patterns":["Where can I go in Alleppey?","Can you recommend places to visit in Alleppey?"],
+        "responses":["Houseboat Ride, Chettikulangara Temple, Ambani Island, Kanakakkunnu Island, Cherai Beach"]
+        },
+        {"tag":"Pune",
+        "patterns":["Where can I go in Pune?","Can you recommend places to visit in Pune?"],
+        "responses":["Chowpatty Beach,Aga Khan Palace,Saswad Dam,Guru Nanak Dwara Shrine,Ganesh Chaturthi Mela Festival"]
+        },
+        {"tag":"Kashmir",
+        "patterns":["Where can I go in Kashmir?","Can you recommend places to visit in Kashmir?"],
+        "responses":["Dal Lake,Mughal Gardens,Gulmarg,Amarnath Shrine,Wular Lake"]
+        },
+        {"tag":"Kerala",
+        "patterns":["Where can I go in Kerala?","Can you recommend places to visit in Kerala?"],
+        "responses":["Munnar - Known for its tea plantations and scenic landscapes,Alleppey - Famous for its backwaters and houseboat cruises, Thekkady - Home to the Periyar Wildlife Sanctuary,Kochi - A historical city with a rich cultural heritage,Kovalam - A popular beach destination"]
+        }   
+    ]
+    }
