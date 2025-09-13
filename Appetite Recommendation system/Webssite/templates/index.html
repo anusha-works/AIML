@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Appetite Recommendation</title>
+
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}"> <!--Navigation Bar-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/font-awesome.css') }}"> <!--symbols etc-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/templatemo-breezed.css') }}"> <!--Whole structure-->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl-carousel.css') }}"> -->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/lightbox.css') }}"> -->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css') }}"> -->     
+
+    
+
+    <!-- Icons -->
+    <link rel="icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            Appetite Recommendation through Emotions
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">Project</a></li>
+                            <li class="scroll-to-section"><a href="#features">Creators</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- ***** Search Area ***** -->
+    <!-- <div id="search">
+        <button type="button" class="close">×</button>
+        <form id="contact" action="#" method="get">
+            <fieldset>
+                <input type="search" name="q" placeholder="SEARCH KEYWORD(s)" aria-label="Search through site content">
+            </fieldset>
+            <fieldset>
+                <button type="submit" class="main-button">Search</button>
+            </fieldset>
+        </form>
+    </div> -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item">
+                <div class="img-fill">
+                    <img src="static/assets/images/b2.png" alt="">
+                    <div class="text-content">
+                        <h3>Let's Us Recommend you Food based on Your Mood </h3>
+                        <h5>Make A Choice</h5>
+                        <a onClick="window.location.href='video_feed';" class="main-stroked-button">Web Camera</a>
+
+                        <!-- <form class="" action="{{ url_for('home') }}" >                            enctype="multipart/form-data"> -->
+                            <a class="main-stroked-button" href="{{ url_for('home') }}">Select Manually</a>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Item End -->
+        </div>
+    </div>
+    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>About The Project</h6>
+                            <h2>Appetite Recommendation System through Emotions</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="service-item">
+                                    <img src="static/assets/images/python.png" alt="">
+                                    <h4>Python / Flask</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="service-item">
+                                    <img src="static/assets/images/cnn.png" alt="">
+                                    <h4>Deep Learning</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="service-item">
+                                    <img src="static/assets/images/frontend.png" alt="">
+                                    <h4>HTML / CSS / JS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="right-text-content">
+                        <p style="font-size: 18px;">
+                            This project offers a fresh approach to machine learning-based meal choice prediction based on users mood.
+                            <br><br>
+                            A hybrid model that utilizes Haar Cascades object detector to detect faces in real-time, and 
+                            a robust Deep Convolutional Neural Network (DCNN) to extract features from the image. 
+                            <br><br>
+                            The application can detect one of the five emotions: Happy, Stress, Boredom, Sad, Cold. In the manual component, one of Ninecan be detected: Happy, Laziness, Sad, Depression, Hungry, Boredom, Stress, Cold Weather, Watching TV
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Area Ends ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="static/assets/images/features-icon-1.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>Neeli sai varshith</h4>
+                            <p style="font-weight: 600;">I am a final year student pursing Engineering in the Department of Computer Science and Engineering at <a href="https://www.sreyas.ac.in/"> SIET, Hyderabad. </a></p>
+                            <a href="https://github.com/Varshith-0809" class="text-button-icon">
+                                Know More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="static/assets/images/features-icon-1.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4></h4>
+                            <p style="font-weight: 600;"></p>
+                            <a href="" class="text-button-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="static/assets/images/features-icon-1.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4></h4>
+                            <p style="font-weight: 600;"></p>
+                            <a href="" class="text-button-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="left-text-content">
+                        <p style="font-weight: 600;">
+                            You can find the project on <a href="https://github.com/Varshith-0809">github</a>. 
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="right-text-content">
+                        <ul class="social-icons">
+                            <li><a rel="nofollow" href="https://github.com/Varshith-0809"><i class="fa fa-github fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/jquery-2.1.0.min.js') }}"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/bootstrap.min.js') }}"></script>
+
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/owl-carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/scrollreveal.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/waypoints.min.js') }}"></script>
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='/assets/js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/imgfix.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/lightbox.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/isotope.js') }}"></script>
+
+    <!-- Global Init -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/custom.js') }}"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

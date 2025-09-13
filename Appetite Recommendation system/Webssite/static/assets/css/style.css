@@ -1,0 +1,48 @@
+form {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+label{
+    font-size: 13px;
+    border-radius: 25px;
+    padding: 9px 19px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+label:hover {
+    background-color: #fff;
+    color: #5fb759;
+  }
+
+input[type="file"] {
+    display: none;
+}
+
+.center {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #555;
+  
+}
+
+.pred_text {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}

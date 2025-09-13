@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Appetite Recommendation</title>
+
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}"> <!--Navigation Bar-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/font-awesome.css') }}"> <!--symbols etc-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/templatemo-breezed.css') }}"> <!--Whole structure-->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl-carousel.css') }}"> -->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/lightbox.css') }}"> -->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css') }}"> -->     
+
+    
+
+    <!-- Icons -->
+    <link rel="icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" >
+                    <nav class="main-nav" >
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo" style = "color: black;">
+                            Appetite Recommendation through Emotions
+                        </a>
+                    </nav>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item">
+                <div class="img-fill">
+                    <img src="static/assets/images/foodwm.png" alt="">
+                    
+                
+      <div class="text-content">
+        <p style="margin-top: 30px; color: black;"><b>In {{ mood }} mood, here are some suggestions, you can try:</b></p>
+        <div class="card-deck" style="margin-bottom: 20px">
+          {% for restaurant in restaurants1 %}
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px;">
+            <h5 style="color: black;"><b>{{ restaurant["Restaurant Name"] }}</b></h5>
+            <p style="font-size: 12px; color: grey"><b>{{ restaurant["Cuisines"] }}</b></p>
+            <p style="font-size: 12px; color: grey; margin-top: -15px"><b> Avg. Cost for 2 : {{ restaurant["Average Cost for two"] }}</b></p>
+            <p><b>⭐️ {{ restaurant["Aggregate rating"] }} Rating</b></p>
+            <p><b>{{ restaurant["Address"] }}</b></p>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- <div class="card-deck" style="margin-bottom: 20px">
+          {% for restaurant in restaurants2 %}
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px;">
+            <h5>{{ restaurant["Restaurant Name"] }}</h5>
+            <p style="font-size: 12px; color: grey">{{ restaurant["Cuisines"] }}</p>
+            <p style="font-size: 12px; color: grey; margin-top: -15px"> Avg. Cost for 2 : {{ restaurant["Average Cost for two"] }}</p>
+            <p>⭐️ {{ restaurant["Aggregate rating"] }} Rating</p>
+            <p>{{ restaurant["Address"] }}</p>
+          </div>
+          {% endfor %}
+        </div> -->
+        <div class="card-deck" style="margin-bottom: 20px">
+          {% for restaurant in restaurants3 %}
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px;">
+            <h5 style="color: black;"><b>{{ restaurant["Restaurant Name"] }}</b></h5>
+            <p style="font-size: 12px; color: grey"><b>{{ restaurant["Cuisines"] }}</b></p>
+            <p style="font-size: 12px; color: grey; margin-top: -15px"><b> Avg. Cost for 2 : {{ restaurant["Average Cost for two"] }}</b></p>
+            <p><b>⭐️ {{ restaurant["Aggregate rating"] }} Rating</b></p>
+            <p><b>{{ restaurant["Address"] }}</b></p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/jquery-2.1.0.min.js') }}"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/bootstrap.min.js') }}"></script>
+
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/owl-carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/scrollreveal.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/waypoints.min.js') }}"></script>
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='/assets/js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/imgfix.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/lightbox.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/isotope.js') }}"></script>
+
+    <!-- Global Init -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/custom.js') }}"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Appetite Recommendation</title>
+
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}"> <!--Navigation Bar-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/font-awesome.css') }}"> <!--symbols etc-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/templatemo-breezed.css') }}"> <!--Whole structure-->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl-carousel.css') }}"> -->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/lightbox.css') }}"> -->
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css') }}"> -->     
+
+    
+
+    <!-- Icons -->
+    <link rel="icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            Appetite Recommendation through Emotions
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">Project</a></li>
+                            <li class="scroll-to-section"><a href="#features">Creators</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item">
+                <div class="img-fill">
+                    <img src="static/assets/images/b2.png" alt="">
+                    <div class="text-content">
+                        <h3>Let's Us Recommend you Food based on Your Mood </h3>
+                        <h5>Make A Choice</h5>
+                        <a onClick="window.location.href='video_feed';" class="main-stroked-button">Web Camera</a>
+
+                        <!-- <form class="" action="{{ url_for('home') }}" >                            enctype="multipart/form-data"> -->
+                            <a class="main-stroked-button" href="{{ url_for('home') }}">Select Manually</a>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Item End -->
+        </div>
+    </div>
+    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/jquery-2.1.0.min.js') }}"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/bootstrap.min.js') }}"></script>
+
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/owl-carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/scrollreveal.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/waypoints.min.js') }}"></script>
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='/assets/js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/imgfix.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/lightbox.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/isotope.js') }}"></script>
+
+    <!-- Global Init -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/custom.js') }}"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

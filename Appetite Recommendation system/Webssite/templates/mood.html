@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Appetite Recommendation</title>
+
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/font-awesome.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/templatemo-breezed.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl-carousel.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/lightbox.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css') }}">
+
+    <!-- Icons -->
+    <link rel="icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='/assets/images/title-logo-removebg-preview.png') }}">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            Appetite Recommendation through Emotions
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+        
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item">
+                <div class="img-fill">
+                    <img src="static/assets/images/b2.png" alt="">
+                    <div class="text-content">
+                        <h3>Let's Us Recommend you Food based on Your Mood </h3>
+                        <h5>Please Select Your Current Mood</h5>
+                        <div class="card-deck">
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('happy')">
+                              <h1>😀</h1>
+                              <h2>Happy</h2>
+                            </div>
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('laziness')">
+                              <h1>😴</h1>
+                              <h2>Laziness</h2>
+                            </div>
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('sad')">
+                              <h1>😔</h1>
+                              <h2>Sad</h2>
+                            </div>
+                          </div>
+                          <div class="card-deck" style="margin-top: 20px">
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('depression')">
+                              <h1>😞</h1>
+                              <h2>Depression</h2>
+                            </div>
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('hunger')">
+                              <h1>🤤</h1>
+                              <h2>Hungry</h2>
+                            </div>
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('boredom')">
+                              <h1>🤔</h1>
+                              <h2>Boredom</h2>
+                            </div>
+                          </div>
+                          <div class="card-deck" style="margin-top: 20px">
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('stress')">
+                              <h1>😵</h1>
+                              <h2>Stress</h2>
+                            </div>
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('cold')">
+                              <h1>❄️</h1>
+                              <h2>Cold Weather</h2>
+                            </div>
+                            <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('tv')">
+                              <h1>📺</h1>
+                              <h2>Watching TV</h2>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item End -->
+        </div>
+    </div>
+    <script>
+        function find(val) {
+        window.location.href="/find?mood="+val;
+        }
+    </script>
+    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Main Banner Area End ***** -->
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="left-text-content">
+                        <p style="font-weight: 600;">
+                            You can find the project on <a href="https://github.com/Varshith-0809">github</a>. 
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="right-text-content">
+                        <ul class="social-icons">
+                            <li><a rel="nofollow" href="https://github.com/Varshith-0809"><i class="fa fa-github fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/jquery-2.1.0.min.js') }}"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/bootstrap.min.js') }}"></script>
+
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/owl-carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/scrollreveal.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/waypoints.min.js') }}"></script>
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='/assets/js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/imgfix.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/lightbox.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/isotope.js') }}"></script>
+
+    <!-- Global Init -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/custom.js') }}"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
