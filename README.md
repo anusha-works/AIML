@@ -17,3 +17,4 @@ Each project is self-contained with code, datasets (or links), and instructions 
 | Super Market Sales Analysis                 | Analyzes retail sales data to uncover trends, revenue drivers, and customer behavior.           | Pandas, Matplotlib, Data Visualization                  |
 | Taxi Fare Prediction                        | Predicts taxi fare prices based on distance, location, and time data.                           | Regression Models, Pandas, Scikit-learn                 |
 | Travel Recommendation System                | Recommends travel destinations based on user interests and historical preferences.              | Recommendation Algorithms, Python, Pandas               |
+| Ecommerce Sales Analysis                    | Examines e-commerce sales data to identify trends, customer behavior, and product performance.  | Python, Pandas, Data Analysis, Visualization            |  
